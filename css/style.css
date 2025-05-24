@@ -1,0 +1,74 @@
+/* pixelsort-site/css/styles.css */
+:root {
+  --bg: #111;
+  --panel: #222;
+  --panel-hover: #333;
+  --text: #f5f5f5;
+  --accent: #444;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+}
+
+header {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#controls > * {
+  background: var(--panel);
+  border: none;
+  padding: .5rem 1rem;
+  color: var(--text);
+  border-radius: .5rem;
+}
+
+input[type="range"] { width: 200px; }
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: .9rem;
+  gap: .25rem;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  transition: background .2s;
+}
+button:hover { background: var(--panel-hover); }
+
+#canvasWrapper {
+  position: relative;
+  overflow: auto;
+  max-width: 100vw;
+  max-height: 70vh;
+}
+
+canvas {
+  border: 2px solid var(--accent);
+  cursor: crosshair;
+}
