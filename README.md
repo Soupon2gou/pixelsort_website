@@ -1,16 +1,5 @@
-# Interactive Pixel-Sort
+工事中
 
-Client-side pixel-sorting toy built with plain HTML + Canvas.
+## デモ
 
-## Demo
-
-<https://YOUR-USERNAME.github.io/pixelsort-site/>
-
-## Usage
-
-1. Drag & drop **any image**.
-2. Choose an **angle** (slider).
-3. **Click** on the image – every pixel along that ray is sorted by brightness.
-4. **Undo**, **Reset**, or **Save** the result as PNG.
-
-Everything runs entirely in the browser; no backend or build tools needed.
+## 使用法
